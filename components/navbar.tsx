@@ -12,6 +12,7 @@ import {
 } from "@heroui/navbar";
 import { Link } from "@heroui/link";
 import NextLink from "next/link";
+import { Image } from "@heroui/image";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
@@ -29,7 +30,11 @@ export const Navbar = () => {
       <NavbarContent justify="start">
         <NavbarBrand>
           <NextLink className="text-sm font-semibold" href="/">
-            logo
+            <Image
+              alt="Marvel Logo"
+              src="https://static.vecteezy.com/system/resources/previews/020/336/409/original/marvel-logo-marvel-icon-free-free-vector.jpg"
+              width={60}
+            />
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
